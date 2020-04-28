@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My movie list</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="text-center">
+    <nav class="navbar navbar-dark bg-dark text-center">
+        <!-- Navbar content -->
+        <a class="navbar-brand navbar-center" href="#">My IMDB movie list</a>
+    </nav>
+    <main>
+        <h1 class="banner p-3">Top 10 movies from IMDB</h1>
+
+        <div class="btn-group btn-group-toggle" data-toggle="buttons" aria-label="Sorting direction choices">
+            <label class="btn btn-lg btn-secondary">
+                <input type="radio" name="directionOfSorting" id="Asc" autocomplete="off"> Asc
+            </label>
+            <label class="btn btn-lg btn-secondary active">
+                <input type="radio" name="directionOfSorting" id="Desc" autocomplete="off" checked> Desc
+            </label>
+        </div>
+        |
+        <div id="AttributeSortingChoices" class="btn-group" role="group" aria-label="Attribute sorting choices">
+            <button type="button" id="sortButtonById" class="btn btn-lg btn-secondary" data-imdb-attribute="id">Sort By ID</button>
+            <button type="button" id="sortButtonByTitle" class="btn btn-lg btn-secondary" data-imdb-attribute="title">Sort By Title</butto n>
+            <button type="button" id="sortButtonByRank" class="btn btn-lg btn-secondary" data-imdb-attribute="rank">Sort By Rank</button>
+        </div>
+        
+        <div class="spacer"></div>
+        
+        <div id="movieList">
+            <table class="table table-bordered text-left">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Rank</th>
+                    </tr>
+                </thead>
+                <tbody id="movieListBody">
+                    <!-- This is where the movie list will be -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+</body>
+</html>

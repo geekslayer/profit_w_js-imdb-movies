@@ -1,0 +1,33 @@
+#number-guess, #result, #history {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#history {
+    margin-top: 16px;
+}
+  
+.banner {
+    color: #FFD23F;
+    font-size: 90px;
+    font-family: sans-serif;
+}
+
+.center-title {
+    text-align: center;
+}
+
+.navbar-center
+{
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    overflow: visible;
+    height: inherit;
+}
+
+div.spacer 
+{
+    height: 20px;
+}
